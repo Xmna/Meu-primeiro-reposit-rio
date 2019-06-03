@@ -1,0 +1,39 @@
+body{
+	margin: 0px;
+	padding: 0px;
+  background-color: #d9ebbdff;
+  
+}
+a:link{
+  text-decoration: none;
+  color: #42290E;
+}
+.topo{
+  
+  background-color:#5ac722;
+  background-image: linear-gradient(to left, transparent, rgba(15,133,1));
+}
+#barra{
+  margin-top: -25px;
+  float: right;
+  padding-right: 8px;
+  
+}
+#busca{
+  background-color:#ecf5deff;
+  border:solid 1px;
+  border-radius:15px;
+  border-color: #42290E;
+  width:300px;
+
+}
+ 
+#txtbusca{
+  float:left;
+  background-color:transparent;
+  padding-left:8px;
+  border:none;
+  height: 28px;
+  width:260px;
+}
+
