@@ -1,7 +1,13 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/dropdawn/src/jquery.smartmenus.js"></script>
+	<link href="assets/js/dropdawn/src/css/sm-core-css.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="assets/js/chamada.js"></script>
+	<link href="assets/js/dropdawn/src/css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css" />
 </head>
 	<body>
 		<header>
@@ -19,10 +25,126 @@
 			</nav>
 			<img src="" alt="">
 		</header>
-	<div id="container">
+	<div id="carrocel">
+		<!--<img src="assets/img/verde.png" >-->
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img class="d-block w-100" src="assets/img/verde.png">
+				  </div>
+				  <div class="carousel-item">
+					<img class="d-block w-100" src="assets/img/massa.png">
+				  </div>
+				  <div class="carousel-item">
+					<img class="d-block w-100" src="assets/img/receitas.png">
+				  </div>
+				  <div class="carousel-item">
+					<img class="d-block w-100" src="assets/img/doce.png">
+				  </div>
+				</div>
+			  </div>
 	</div>
+	<ul>
+		<li><a href="#home">Sobremesas</a></li>
+		<li><a href="#news">Sopas</a></li>
+		<li><a href="#home">Cremes</a></li>
+		<li><a href="#news">Bebidas</a></li>
+		<li><a href="#home">Lanches</a></li>
+		<li><a href="#news">Massas</a></li>
+		<li><a href="#news">Entradas</a></li>
+		<li><a href="#home">Principais</a></li>
+		<li><a href="#news">Aperitivos</a></li>
+		<li><a href="#home">Saladas Frias</a></li>
+		<li><a href="#news">Saladas Quentes</a></li>
+		<li><a href="#home">Carnes Vegetais</a></li>
+		<li><a href="#home">+ Receitas</a></li>
+	  </ul>
+	  <p> </p>
+	  <section>
+	<p>  </p>
+	  <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<div class="post-preview">
+						<a href="#">
+							<h2 class="post-title">
+								Sobremesa Deliciosa
+							</h2>
+							<h3 class="post-subtitle">
+								Pavê vegano de paçoca
+								<img src="assets/img/pave.jpg" height="250" width="450">
+							</h3>
+							
+						</a>
+						<p class="post-meta">Postado por <a href="#">@anaMaria_jesu</a> on Setembro 24, 2017</p>
+						<div class="linha-vertical"></div>
+					</div>
+					<hr>
+					<div class="post-preview">
+						<a href="#">
+							<h2 class="post-title">
+								Almoço de Domingo
+							</h2>
+							<h3 class="post-subtitle">
+								Confira esta receita de lasanha vegana!
+								<img src="assets/img/lasanha.jpg" height="250" width="450">
+							</h3>
+						</a>
+						<p class="post-meta">Postado por <a href="#">@henry.castelo</a> on Setembro 18, 2015</p>
+						<div class="linha-vertical"></div>
+					</div>
+					<hr>
+					<div class="post-preview">
+						<a href="#">
+							<h2 class="post-title">
+								Bolo de Chá da Tarde
+							</h2>
+							<h3 class="post-subtitle">
+								Bolo Vegano de Maçã com Canela 
+								<p> </p>
+								<img src="assets/img/bolo.jpg" height="250" width="450">
+							</h3>
+						</a>
+						<p class="post-meta">Enviado por <a href="#">@Ester_bragg</a> em Agosto 24, 2014</p>
+						<div class="linha-vertical"></div>
+					</div>
+					<hr>
+					<div class="post-preview">
+						<a href="#">
+							<h2 class="post-title">
+								Batatas, Cenouras e muito mais!
+							</h2>
+							<h3 class="post-subtitle">
+								Confira a receita de uma jardineira vegetariana!
+								<p> </p>
+								<img src="assets/img/jardineira.jpeg" height="250" width="450">
+							</h3>
+						</a>
+						<p class="post-meta">Enviado por <a href="#">@fernando_Jorg</a> em Julho 8, 2014</p>
+						<div class="linha-vertical"></div>
+					</div>
+					<hr>
+					<ul class="pager">
+						<li class="next">
+							<a href="#">Mais Receitas Postadas &rarr;</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+	</section>
 		<footer>
-		
+			<div>
+				<p>DAW II - Ximena Aguirre</p>
+			</div>
 		</footer>
+		<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
 	</body>
+	<script>
+		$('.carousel').carousel();
+	</script>
 </html>
