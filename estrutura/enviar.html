@@ -45,33 +45,39 @@
 				<div class="col-lg-12 col-lg-offset-12 col-md-10 col-md-offset-1">
 					<div id="cadastro">
 						<form method="post" action="">
-							<h1>Cadastro</h1>
+							<h1>Enviar Receita</h1>
 
 							<p>
-								<label for="nome_cad">Seu nome</label>
-								<input id="nome_cad" name="nome_cad" required="required" type="text"
-									placeholder="nome" />
+								<label for="nome_rec">Nome da Receita</label>
+								<input id="nome_rec" name="nome_rec" required="required" type="text"
+									placeholder="ex. Almondegas" />
 							</p>
 
 							<p>
-								<label for="email_cad">Seu e-mail</label>
-								<input id="email_cad" name="email_cad" required="required" type="email"
-									placeholder="contato@htmlecsspro.com" />
+								<label for="desc">Descrição</label>
+								<input id="desc" name="desc" required="required" type="text"
+									placeholder="ex. Receita de Almondea vegetariana feita com lentilha" />
 							</p>
 
 							<p>
-								<label for="senha_cad">Sua senha</label>
-								<input id="senha_cad" name="senha_cad" required="required" type="password"
-									placeholder="ex. 1234" />
-							</p>
+								<label for="ingred">Ingredientes</label>
+								<input id="ingred" name="ingred" required="required" type="text"
+									placeholder="ex. 1 xícara de lentilha cozida" />
+                            </p>
+                            
+                            <p>
+                                    <label for="modo">Modo de Preparo</label>
+                                    <input id="modo" name="modo" required="required" type="text"
+                                     placeholder="ex. cozinhe a lentilha até não haver mais água" />
+                             </p>
 
 							<p>
-								<input type="submit" value="Cadastrar" />
+								<input type="submit" value="Enviar" />
 							</p>
 
 							<p class="link">
 								Já tem conta?
-								<a href="#paralogin"> Ir para Login </a>
+								<a href="login.html"> Ir para Login </a>
 							</p>
 						</form>
 					</div>

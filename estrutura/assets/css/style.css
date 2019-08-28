@@ -1,41 +1,43 @@
-body{
-	margin: 0px;
-	padding: 0px;
+body {
+  margin: 0px;
+  padding: 0px;
   background-color: #d9ebbdff;
-  
 }
-a:link{
+
+a:link {
   text-decoration: none;
   color: #42290E;
 }
-.topo{
-  background-color:#5ac722;
-  background-image: linear-gradient(to left, transparent, rgba(15,133,1));
+
+.topo {
+  background-color: #5ac722;
+  background-image: linear-gradient(to left, transparent, rgba(15, 133, 1));
 }
-#barra{
+
+#barra {
   margin-top: -31px;
   float: right;
   padding-right: 8px;
-  
 }
-#busca{
-  background-color:#ecf5deff;
-  border:solid 1px;
-  border-radius:15px;
-  border-color: #42290E;
-  width:300px;
 
+#busca {
+  background-color: #ecf5deff;
+  border: solid 1px;
+  border-radius: 15px;
+  border-color: #42290E;
+  width: 300px;
 }
- 
-#txtbusca{
-  float:left;
-  background-color:transparent;
-  padding-left:8px;
-  border:none;
+
+#txtbusca {
+  float: left;
+  background-color: transparent;
+  padding-left: 8px;
+  border: none;
   height: 28px;
-  width:260px;
+  width: 260px;
 }
-.menu{
+
+.menu {
   margin: 0px;
   padding: 0px;
   list-style: none;
@@ -43,40 +45,42 @@ a:link{
   border: 1px solid transparent;
   float: left;
 }
-.menu li{
+
+.menu li {
   position: relative;
   float: left;
   border-right: 1px solid transparent;
 }
-.menu li a{
-  color:#333;
-  text-decoration:none; 
-  padding:5px 10px; 
-  display:block;
-}
- 
-.menu li a:hover{
-background:#333; 
-color:#fff; 
+
+.menu li a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
 }
 
-.menu li  ul{
-  position:absolute; 
-  top:25px; 
-  left:0;
-  background-color:#fff; 
-  display:none;
+.menu li a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.menu li ul {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background-color: #fff;
+  display: none;
 }
 
 /* Estilização do dropdonw*/
 
-ul {
+#menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:#5ac722;
-  background-image: linear-gradient(to left, transparent, rgba(15,133,1));
+  background-color: #5ac722;
+  background-image: linear-gradient(to left, transparent, rgba(15, 133, 1));
 }
 
 li {
@@ -94,9 +98,8 @@ li a, .dropbtn {
 li a:hover, .dropdown:hover .dropbtn {
   text-decoration: none;
   color: white;
-  background-color:#5ac722;
-  background-image: linear-gradient(to left, transparent, rgba(15,133,1));
-  
+  background-color: #5ac722;
+  background-image: linear-gradient(to left, transparent, rgba(15, 133, 1));
 }
 
 li.dropdown {
@@ -109,7 +112,7 @@ li.dropdown {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -130,43 +133,50 @@ li.dropdown {
   display: inline-block;
 }
 
-footer{
+footer {
   margin: 0px;
   padding: 0px;
   margin-bottom: -30px;
-  background-color:#5ac722;
-  background-image: linear-gradient(to left, transparent, rgba(15,133,1));
+  background-color: #5ac722;
+  background-image: linear-gradient(to left, transparent, rgba(15, 133, 1));
   font-size: 0.9em;
-  color:rgba(15,133,1);
+  color: rgba(15, 133, 1);
 }
 
-.post-title{
-  text-decoration: none;
-  color: #42290E;
-  text-align: center;
-
-}
-.post-subtitle{
+.post-title {
   text-decoration: none;
   color: #42290E;
   text-align: center;
 }
-h3{
+
+.post-subtitle {
+  text-decoration: none;
+  color: #42290E;
+  text-align: center;
+}
+
+h3 {
   text-align: center;
 }
 
 .linha-vertical {
-  height: 350px;/*Altura da linha*/
+  height: 350px;
+  /*Altura da linha*/
   margin-left: -5px;
-  border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+  border-left: 1px solid;
+  /* Adiciona borda esquerda na div como ser fosse uma linha.*/
   color: #C0C0C0;
   margin-top: -350px;
- 
 }
-.post-preview{
+
+.post-preview {
   text-align: center;
 }
 
+.texto {
+  text-align: center;
+}
 
-.container{
+.container {
+  margin: 20px;
 }

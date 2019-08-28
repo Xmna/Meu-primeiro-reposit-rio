@@ -1,27 +1,29 @@
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 </head>
-	<body>
-		<header>
-			<nav class="topo">
-				<div id="busca">
-					<input type="text" id="txtbusca"/>
-					<img src="assets/img/lupa.png" id="btnBusca" alt="Buscar" width="30px" height="30px"/>
-				</div>
-				<div id="barra">
-					<img src="assets/img/login.png" width="25px" height="25px"/>
-					<a href="login.php">Login</a>
-					<img src="assets/img/cadastro.png" width="25px" height="25px"/>
-					<a href="cadastro.php">Cadastro</a>
-				</div>
-			</nav>
-			<img src="assets/img/verde.png" width="1366px" height="526px">
-		</header>
-	<ul>
-		<li><a href="#home">Sobremesas</a></li>
+
+<body>
+	<header>
+		<nav class="topo">
+			<div id="busca">
+				<input type="text" id="txtbusca" />
+				<img src="assets/img/lupa.png" id="btnBusca" alt="Buscar" width="30px" height="30px" />
+			</div>
+			<div id="barra">
+				<img src="assets/img/login.png" width="25px" height="25px" />
+				<a href="login.php">Login</a>
+				<img src="assets/img/cadastro.png" width="25px" height="25px" />
+				<a href="cadastro.php">Cadastro</a>
+			</div>
+		</nav>
+		<img src="assets/img/verde.png" width="1366px" height="526px">
+	</header>
+	<ul id="menu">
+		<li><a href="sobremesa.html">Sobremesas</a></li>
 		<li><a href="#news">Sopas</a></li>
 		<li><a href="#home">Cremes</a></li>
 		<li><a href="#news">Bebidas</a></li>
@@ -32,24 +34,69 @@
 		<li><a href="#news">Aperitivos</a></li>
 		<li><a href="#home">Saladas Frias</a></li>
 		<li><a href="#news">Saladas Quentes</a></li>
-        <li><a href="#home">Carnes Vegetais</a></li>
-        <li><a href="#home">+ Receitas</a></li>
-	  </ul>
-	  <section>
-		  <div>
-							<h2 class="post-title">
-								Batatas, Cenouras e muito mais!
-							</h2>
-							<h3 class="post-subtitle">
-								Jardineira Vegetariana
-								<p> </p>
-								<img src="assets/img/jardineira.jpeg" height="250" width="450">
-							</h3>
-						</a>
-						<div class="linha-vertical"></div>
-					
-		  </div>
-	  </section>
+		<li><a href="#home">Carnes Vegetais</a></li>
+		<li><a href="#home">+ Receitas</a></li>
+	</ul>
+
+	<article>
+		<div class="container">
+			<div>
+				<div class="col-lg-15 col-lg-offset-20 col-md-10 col-md-offset-1">
+					<section class="col-lg-15 col-lg-offset-15 col-md-10 col-md-offset-1">
+						<h2 class="post-title">
+							Batatas, Cenouras e muito mais!
+						</h2>
+						<h3 class="post-subtitle">
+							Jardineira Vegetariana
+						</h3>
+					</section>
+					<section class="col-lg-15 col-lg-offset-15 col-md-10 col-md-offset-1">
+						<p> </p>
+						<ul id="menu">
+							<h3>Ingredientes</h3>
+						</ul>
+						<div id="lista">
+							<p>1</p>
+							<p>2</p>
+							<p>3</p>
+							<p>4</p>
+							<p>5</p>
+						</div>
+						<ul id="menu">
+							<h3>Modo de Preparo</h3>
+						</ul>
+						<div id="alinha-texto">
+							<p>
+								texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
+							</p>
+							<p>
+								texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
+							</p>
+							<p>
+								texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
+							</p>
+							<p>
+								texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
+							</p>
+							<p>
+								texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
+							</p>
+						</div>
+					</section>
+
+				</div>
+			</div>
+		</div>
+
+	</article>
+	<footer>
+		<div>
+			<p>DAW II - Ximena Aguirre</p>
+		</div>
+	</footer>
+	<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
