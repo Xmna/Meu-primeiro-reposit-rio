@@ -7,6 +7,7 @@ body {
 a:link {
   text-decoration: none;
   color: #42290E;
+  font-size: 0.95em;
 }
 
 .topo {
@@ -150,6 +151,7 @@ h3 {
 .container {
   margin: 20px;
   padding-left: 50px;
+  margin-left: 8px;
 }
 .row{
   display :flex;
@@ -169,4 +171,28 @@ h4{
   width: auto;
   padding: 10px 18px;
   background-color: rgba(15, 133, 1);
+}
+#container{
+  margin: 20px;
+  padding-left: 50px;
+  margin-left: 50px;
+}
+#metodo{
+  display :flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: -200px;
+  background-color: #5ac722;
+  background-image: linear-gradient(to left, transparent, rgba(15, 133, 1));
+  color: white;
+}
+#metodo h5{
+  margin-left: 150px;
+  
+}
+#metodo h6{
+  margin-left: 150px;
+  text-align: center;
+  
 }

@@ -2,7 +2,7 @@
 
 <head>
 	<meta charset="utf-8">
-	
+
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/modal.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -16,8 +16,9 @@
 				<img src="assets/img/lupa.png" id="btnBusca" alt="Buscar" width="30px" height="30px" />
 			</div>
 			<div id="barra">
-					<img src="assets/img/login.png" width="25px" height="25px" />
-					<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+				<img src="assets/img/login.png" width="25px" height="25px" />
+				<button onclick="document.getElementById('id01').style.display='block'"
+					style="width:auto;">Login</button>
 				<img src="assets/img/cadastro.png" width="25px" height="25px" />
 				<a href="cadastro.html">Cadastro</a>
 			</div>
@@ -38,43 +39,80 @@
 		<li><a href="#home">Saladas Frias</a></li>
 		<li><a href="#news">Saladas Quentes</a></li>
 		<li><a href="#home">Carnes Vegetais</a></li>
-		
+
 	</ul>
 	<section>
+		<div id="conteudo">
+			<div>
+				<h4>Título da receita</h4>
+				<div class="row">
+					<div>
+						<img src="assets/img/pave1.jpg" height="200px">
+					</div>
+					<div>
+						<img src="assets/img/pave2.jpg" height="200px">
+					</div>
+					<div>
+						<img src="assets/img/pave3.jpg" height="200px">
+					</div>
+				</div>
+				<div id="metodo">
+					<div>
+						<h5>Tempo de preparo </h5>
+						<h6> xxMin</h6>
+					</div>
+					<div>
+						<h5>Rendimento</h5>
+						<h6> xxPorções</h6>
+					</div>
+					<div>
+						<h5>Autor</h5>
+						<h6> @John_doe</h6>
+					</div>
+				</div>
+				<div>
+					<h4>Ingredientes</h4>
+				</div>
 
+
+
+			</div>
+		</div>
 	</section>
-<div id="id01" class="modal">
-  
-			<form class="modal-content animate" action="/action_page.php" method="post">
-			  <div class="imgcontainer">
-				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	<div id="id01" class="modal">
+
+		<form class="modal-content animate" action="/action_page.php" method="post">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close"
+					title="Close Modal">&times;</span>
 				<img src="assets/img/image10.png" alt="Avatar" class="avatar">
-			  </div>
-		  
-			  <div class="container">
-				<label for="uname"><b>Username</b></label>
-				<input type="text" placeholder="Enter Username" name="uname" required>
-		  
+			</div>
+
+			<div class="container">
+				<label for="uname"><b>Nome de Usuário</b></label>
+				<input type="text" placeholder="User_08" name="uname" required>
+
 				<label for="psw"><b>Password</b></label>
-				<input type="password" placeholder="Enter Password" name="psw" required>
-				  
+				<input type="password" placeholder="Abc10254&*" name="psw" required>
+
 				<button id="loginbtn" type="submit">Login</button>
 				<label>
-				  <input type="checkbox" checked="checked" name="remember"> Remember me
+					<input type="checkbox" checked="checked" name="remember"> Lembrar-me
 				</label>
-			  </div>
-		  
-			  <div class="container" style="background-color:#f1f1f1">
-				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-				<span class="psw">Forgot <a href="#">password?</a></span>
-			  </div>
-			</form>
-		  </div>
+			</div>
+
+			<div class="container" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('id01').style.display='none'"
+					class="cancelbtn">Cancelar</button>
+				<span class="psw">Esqueceu a <a href="#">senha?</a></span>
+			</div>
+		</form>
+	</div>
 	<footer>
-			<div class="footer">
-					<p>Seja um colaborador - Quem somos - Email - Facebook</p>
-					<small>Copyright © 2019 </small>
-				</div>
+		<div class="footer">
+			<p>Seja um colaborador - Quem somos - Email - Facebook</p>
+			<small>Copyright © 2019 </small>
+		</div>
 	</footer>
 	<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>

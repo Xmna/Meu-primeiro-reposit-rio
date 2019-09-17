@@ -49,6 +49,8 @@ img.avatar {
 
 .container {
   padding: 16px;
+  padding-right: 100px;
+  margin-right: 8px;
 }
 
 span.psw {
