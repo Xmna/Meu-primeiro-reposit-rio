@@ -2,31 +2,29 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/modal.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/dropdawn/src/jquery.smartmenus.js"></script>
-	<link href="assets/js/dropdawn/src/css/sm-core-css.css" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="assets/js/chamada.js"></script>
-	<link href="assets/js/dropdawn/src/css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css" />
+	
 </head>
 
 <body>
 	<header>
 		<nav class="topo">
 			<div id="busca">
-				<input type="image" id="txtbusca" />
+				<input type="text" id="txtbusca" />
 				<img src="assets/img/lupa.png" id="btnBusca" alt="Buscar" width="30px" height="30px" />
 			</div>
 			<div id="barra">
 				<img src="assets/img/login.png" width="25px" height="25px" />
-				<a href="login.html">Login</a>
+				<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 				<img src="assets/img/cadastro.png" width="25px" height="25px" />
 				<a href="cadastro.html">Cadastro</a>
 			</div>
 		</nav>
-		<img src="" alt="">
 	</header>
 	<div id="carrocel">
 		<!--<img src="assets/img/verde.png" >-->
@@ -48,6 +46,7 @@
 		</div>
 	</div>
 	<ul id="menu">
+		<li><a href="index.html">Home</a></li>
 		<li><a href="sobremesa.html">Sobremesas</a></li>
 		<li><a href="#news">Sopas</a></li>
 		<li><a href="#home">Cremes</a></li>
@@ -60,79 +59,80 @@
 		<li><a href="#home">Saladas Frias</a></li>
 		<li><a href="#news">Saladas Quentes</a></li>
 		<li><a href="#home">Carnes Vegetais</a></li>
-		<li><a href="#home">+ Receitas</a></li>
 	</ul>
 	<p> </p>
 	<section>
-		<p> </p>
-		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 col-lg-offset-12 col-md-10 col-md-offset-1">
-					<div class="post-preview">
+					<div>
+						<img src="assets/img/jardineira.jpeg" height="200px">
 						<a href="receita.html">
-							<h2 class="post-title">
-								Sobremesa Deliciosa
-							</h2>
-							<h3 class="post-subtitle">
-								Pavê vegano de paçoca
-							</h3>
-							<img src="assets/img/pave.jpg" height="250" width="450">
-
+							<h4>Jardineira Vegetariana</h4>
 						</a>
-						<p class="post-meta">Postado por <a href="#">@anaMaria_jesu</a> on Setembro 24, 2017</p>
-						<div class="linha-vertical"></div>
 					</div>
-					<hr>
-					<div class="post-preview">
+					<div>
+						<img src="assets/img/lasanha.jpg" height="200px">
 						<a href="receita.html">
-							<h2 class="post-title">
-								Almoço de Domingo
-							</h2>
-							<h3 class="post-subtitle">
-								Confira esta receita de lasanha vegana!
-							</h3>
-							<img src="assets/img/lasanha.jpg" height="250" width="450">
+							<h4>Lasanha de Vegetais</h4>
 						</a>
-						<p class="post-meta">Postado por <a href="#">@henry.castelo</a> on Setembro 18, 2015</p>
-						<div class="linha-vertical"></div>
 					</div>
-					<hr>
-					<div class="post-preview">
+					<div>
+						<img src="assets/img/bolo.jpg" height="200px">
 						<a href="receita.html">
-							<h2 class="post-title">
-								Bolo de Chá da Tarde
-							</h2>
-							<h3 class="post-subtitle">
-								Bolo Vegano de Maçã com Canela
-								<p> </p>
-								<img src="assets/img/bolo.jpg" height="250" width="450">
-							</h3>
+							<h4>Bolo de Maçã Vegano</h4>
 						</a>
-						<p class="post-meta">Enviado por <a href="#">@Ester_bragg</a> em Agosto 24, 2014</p>
-						<div class="linha-vertical"></div>
 					</div>
-					<hr>
-					<div class="post-preview">
+				</div>
+				<div class="row">
+					<div>
+						<img src="assets/img/pure.jpg" height="200px">
 						<a href="receita.html">
-							<h2 class="post-title">
-								Batatas, Cenouras e muito mais!
-							</h2>
-							<h3 class="post-subtitle">
-								Confira a receita de uma jardineira vegetariana!
-								<p> </p>
-								<img src="assets/img/jardineira.jpeg" height="250" width="450">
-							</h3>
+							<h4>Purê de Vegetais</h4>
 						</a>
-						<p class="post-meta">Enviado por <a href="#">@fernando_Jorg</a> em Julho 8, 2014</p>
-						<div class="linha-vertical"></div>
 					</div>
-					<hr>
+					<div>
+						<img src="assets/img/hamburguer.jpg" height="200px">
+						<a href="receita.html">
+							<h4>Hamburguer Vegano</h4>
+						</a>
+					</div>
+					<div>
+						<img src="assets/img/panqueca.jpg" height="200px">
+						<a href="receita.html">
+							<h4>Panqueca Vegetariana</h4>
+						</a>
+					</div>
 				</div>
 			</div>
-		</div>
-
-		<hr>
+	
+			<hr>
 	</section>
+	<div id="id01" class="modal">
+  
+			<form class="modal-content animate" action="/action_page.php" method="post">
+			  <div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				<img src="assets/img/image10.png" alt="Avatar" class="avatar">
+			  </div>
+		  
+			  <div class="container">
+				<label for="uname"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="uname" required>
+		  
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+				  
+				<button id="loginbtn" type="submit">Login</button>
+				<label>
+				  <input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+			  </div>
+		  
+			  <div class="container" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				<span class="psw">Forgot <a href="#">password?</a></span>
+			  </div>
+			</form>
+		  </div>
 	<footer>
 		<div class="footer">
 			<p>Seja um colaborador - Quem somos - Email - Facebook</p>
@@ -142,6 +142,7 @@
 	<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/modal.js"></script>
 </body>
 <script>
 	$('.carousel').carousel();

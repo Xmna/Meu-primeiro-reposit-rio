@@ -2,14 +2,12 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/modal.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/dropdawn/src/jquery.smartmenus.js"></script>
-    <link href="assets/js/dropdawn/src/css/sm-core-css.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="assets/js/chamada.js"></script>
-    <link href="assets/js/dropdawn/src/css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -20,8 +18,8 @@
                 <img src="assets/img/lupa.png" id="btnBusca" alt="Buscar" width="30px" height="30px" />
             </div>
             <div id="barra">
-                <img src="assets/img/login.png" width="25px" height="25px" />
-                <a href="login.html">Login</a>
+                    <img src="assets/img/login.png" width="25px" height="25px" />
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
                 <img src="assets/img/cadastro.png" width="25px" height="25px" />
                 <a href="cadastro.html">Cadastro</a>
             </div>
@@ -48,6 +46,7 @@
         </div>
     </div>
     <ul id="menu">
+        <li><a href="index.html">Home</li>
         <li><a href="#home">Sobremesas</a></li>
         <li><a href="#news">Sopas</a></li>
         <li><a href="#home">Cremes</a></li>
@@ -60,7 +59,7 @@
         <li><a href="#home">Saladas Frias</a></li>
         <li><a href="#news">Saladas Quentes</a></li>
         <li><a href="#home">Carnes Vegetais</a></li>
-        <li><a href="#home">+ Receitas</a></li>
+        
     </ul>
     <p> </p>
     <section>
@@ -70,52 +69,73 @@
                 <div>
                     <img src="assets/img/mousse.jpg" height="200px">
                     <a href="receita.html">
-                        <h3>Mousse de Ameixa</h3>
+                        <h4>Mousse de Ameixa</h4>
                     </a>
-                    <p>Mousse vegano de ameixa</p>
                 </div>
                 <div>
                     <img src="assets/img/pudim.jpg" height="200px">
                     <a href="receita.html">
-                        <h3>Pudim de Maracujá</h3>
+                        <h4>Pudim de Maracujá</h4>
                     </a>
-                    <p>Delicioso pudim vegano de Maracujá</p>
                 </div>
                 <div>
                     <img src="assets/img/brigadeiro.jpg" height="200px">
                     <a href="receita.html">
-                        <h3>Brigadeiro Saudável</h3>
+                        <h4>Brigadeiro Saudável</h4>
                     </a>
-                    <p>Brigadeiro vegano!</p>
                 </div>
             </div>
             <div class="row">
                 <div>
-                    <img src="assets/img/mousse.jpg" height="200px">
+                    <img src="assets/img/pave.jpg" height="200px">
                     <a href="receita.html">
-                        <h3>Mousse de Ameixa</h3>
+                        <h4>Pavê de Paçoca</h4>
                     </a>
-                    <p>Mousse vegano de ameixa</p>
                 </div>
                 <div>
-                    <img src="assets/img/pudim.jpg" height="200px">
+                    <img src="assets/img/sorvete.jpg" height="200px">
                     <a href="receita.html">
-                        <h3>Pudim de Maracujá</h3>
+                        <h4>Sorvete de Amêndoa</h4>
                     </a>
-                    <p>Delicioso pudim vegano de Maracujá</p>
                 </div>
                 <div>
-                    <img src="assets/img/brigadeiro.jpg" height="200px">
+                    <img src="assets/img/doce.jpg" height="200px">
                     <a href="receita.html">
-                        <h3>Brigadeiro Saudável</h3>
+                        <h4>Torta de chocolate</h4>
                     </a>
-                    <p>Brigadeiro vegano!</p>
                 </div>
             </div>
         </div>
 
         <hr>
     </section>
+    <div id="id01" class="modal">
+  
+			<form class="modal-content animate" action="/action_page.php" method="post">
+			  <div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				<img src="assets/img/image10.png" alt="Avatar" class="avatar">
+			  </div>
+		  
+			  <div class="container">
+				<label for="uname"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="uname" required>
+		  
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+				  
+				<button id="loginbtn" type="submit">Login</button>
+				<label>
+				  <input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+			  </div>
+		  
+			  <div class="container" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				<span class="psw">Forgot <a href="#">password?</a></span>
+			  </div>
+			</form>
+		  </div>
     <footer>
             <div class="footer">
                     <p>Seja um colaborador - Quem somos - Email - Facebook</p>
