@@ -91,6 +91,17 @@ a:link {
   background-color: #5ac722;
   background-image: linear-gradient(to left, transparent, rgba(15, 133, 1));
 }
+#menuadm{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+}
+#menuadm li{
+  float: left;
+  font-size: 15px;  
+}
 
 #menu li {
   float: left;
@@ -218,7 +229,7 @@ h4{
   font-size:20px;
   font-family:'Arial, Times, serif';
 }
-input[type=text],input[type=email],input[type=password]{
+input[type=text],input[type=email],input[type=password],input[type=number],input[type=file],input[type=time],textarea,select{
 	width:100%;
 	max-width:280px;
 	margin-bottom:10px;
@@ -245,6 +256,7 @@ input[type=submit]{
   background-color: white;
   margin-left: 150px;
   margin-right: 150px;
+  margin-bottom: 50px;
 }
 article{
   text-align: center;
@@ -254,6 +266,10 @@ article{
 }
 #ingredientes ul{
   margin-left: 120px;
+}
+#tabela{
+  padding-left: 90px;
+  padding-right: 15px;
 }
 
 
