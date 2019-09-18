@@ -3,17 +3,22 @@ body {
   padding: 0px;
   background-color: rgb(240, 248, 228);
 }
-
 a:link {
   text-decoration: none;
-  color: #42290E;
-  font-size: 0.95em;
+  color: white;
+  font-size: 1em;
 }
 
 .topo {
   background-color: #5ac722;
   background-image: linear-gradient(to left, transparent, rgba(15, 133, 1));
 }
+.topo a{
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+
 
 #barra {
   margin-top: -31px;
@@ -87,8 +92,9 @@ a:link {
   background-image: linear-gradient(to left, transparent, rgba(15, 133, 1));
 }
 
-li {
+#menu li {
   float: left;
+  font-size: 15px;
 }
 
 li a, .dropbtn {
@@ -166,7 +172,7 @@ h4{
   text-decoration: none;
   color: #5ac722;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 #loginbtn{
   width: auto;
@@ -188,7 +194,71 @@ h4{
   color: white;
 }
 #metodo h5,h6{
-  margin-left: 150px;
   text-align: center;
+  padding: 0 74px;
   
 }
+#cadastro{
+	margin:50px auto;
+	width:100%;
+	max-width:300px;
+	background:white;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding:20px;
+	text-align:left;
+	font-family:'Arial, Times, serif';
+	font-size:16px;
+	color:#666;
+}
+#cadastro h3{
+	margin:0px;
+	color: #5ac722;
+  font-size:20px;
+  font-family:'Arial, Times, serif';
+}
+input[type=text],input[type=email],input[type=password]{
+	width:100%;
+	max-width:280px;
+	margin-bottom:10px;
+	padding:10px;
+	border:1px #CCC solid;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size:16px;
+}
+input[type=submit]{
+	margin:0px;
+	background:#5ac722;
+	padding:10px 20px;
+	border:1px #5ac722 solid;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor:pointer;
+	font-size:16px;
+	color:#FFF;
+}
+#conteiner{
+  background-color: white;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+article{
+  text-align: center;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-bottom: 10px;
+}
+#ingredientes ul{
+  margin-left: 120px;
+}
+
+
+/*SLIDER JSSOR*/
+
+.jssorl-009-spin img{animation-name:jssorl-009-spin;animation-duration:1.6s;animation-iteration-count:infinite;animation-timing-function:linear}@keyframes jssorl-009-spin{from{transform:rotate(0);}to{transform:rotate(360deg);}}.jssorb032{position:absolute}.jssorb032 .i{position:absolute;cursor:pointer}.jssorb032 .i .b{fill:#fff;fill-opacity:.7;stroke:#000;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:.25}.jssorb032 .i:hover .b{fill:#000;fill-opacity:.6;stroke:#fff;stroke-opacity:.35}.jssorb032 .iav .b{fill:#000;fill-opacity:1;stroke:#fff;stroke-opacity:.35}.jssorb032 .i.idn{opacity:.3}.jssora051{display:block;position:absolute;cursor:pointer}.jssora051 .a{fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10}.jssora051:hover{opacity:.8}.jssora051.jssora051dn{opacity:.5}.jssora051.jssora051ds{opacity:.3;pointer-events:none}
+
+/*SLIDER JSSOR*/

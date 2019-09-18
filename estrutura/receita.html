@@ -16,6 +16,8 @@
 				<img src="assets/img/lupa.png" id="btnBusca" alt="Buscar" width="30px" height="30px" />
 			</div>
 			<div id="barra">
+					<img src="assets/img/garfo.png" width="25px" height="25px" />
+					<a href="enviar.html">Enviar Receita</a>
 				<img src="assets/img/login.png" width="25px" height="25px" />
 				<button onclick="document.getElementById('id01').style.display='block'"
 					style="width:auto;">Login</button>
@@ -23,8 +25,50 @@
 				<a href="cadastro.html">Cadastro</a>
 			</div>
 		</nav>
-		<img src="assets/img/verde.png" width="1366px" height="526px">
 	</header>
+	<div id="jssor_1"
+			style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
+			<!-- Loading Screen -->
+			<div data-u="loading" class="jssorl-009-spin"
+				style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+				<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+			</div>
+			<div data-u="slides"
+				style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
+				<div>
+					<img data-u="image" src="assets/img/verde.png" />
+				</div>
+				<div>
+					<img data-u="image" src="assets/img/massa.png" />
+				</div>
+				<div>
+					<img data-u="image" src="assets/img/receitas.png" />
+				</div>
+			</div>
+			<!-- Bullet Navigator -->
+			<div data-u="navigator" class="jssorb032" style="position:absolute;bottom:12px;right:12px;"
+				data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+				<div data-u="prototype" class="i" style="width:16px;height:16px;">
+					<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+						<circle class="b" cx="8000" cy="8000" r="5800"></circle>
+					</svg>
+				</div>
+			</div>
+			<!-- Arrow Navigator -->
+			<div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;"
+				data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+				<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+					<polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+				</svg>
+			</div>
+			<div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;"
+				data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+				<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+					<polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+				</svg>
+			</div>
+		</div>
+	</div>
 	<ul id="menu">
 		<li><a href="index.html">Home</a></li>
 		<li><a href="sobremesa.html">Sobremesas</a></li>
@@ -41,7 +85,7 @@
 		<li><a href="#home">Carnes Vegetais</a></li>
 
 	</ul>
-	<section>
+	<section id="conteiner" >
 		<div id="conteudo">
 			<div>
 				<h4>Título da receita</h4>
@@ -81,7 +125,7 @@
 					</table>
 				</div>
 
-				<div id="Ingredientes">
+				<div id="ingredientes">
 					<h4>Ingredientes</h4>
 					<ul>
 						<li>Ingredientes</li>
@@ -91,9 +135,38 @@
 						<li>Ingredientes</li>
 					</ul>
 				</div>
-
-
-
+				<div id="preparo">
+						<h4>Modo de Preparo</h4>
+					<article>
+						<p>
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+							laudantium,
+							totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+							vitae
+							dicta sunt explicabo.</p>
+							<p> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+							fugit,
+							
+							sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+							
+							<p>Neque porro
+							quisquam
+							est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+							numquam eius
+						    </p>
+							<p>
+							modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> Ut enim ad
+							minima
+							veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+							ea
+						   </p>
+							<p>
+							commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+							quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+							pariatur
+							</p>
+					</article>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -135,6 +208,8 @@
 	<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jssor.js" type="text/javascript"></script>
+	<script type="text/javascript">jssor_1_slider_init();</script>
 </body>
 
 </html>
