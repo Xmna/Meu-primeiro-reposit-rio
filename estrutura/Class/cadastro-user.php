@@ -1,8 +1,6 @@
 <?php
-include_once 'autoload.php';
 
-Login::checkAuth();
-
+$usuario = autoload(Usuario);
 //Verifica se veio tudo preenchido do formulário
 if (isset($_POST['mp-nome']) && $_POST['mp-nome'] != "" 
         && isset($_POST['senha']) && $_POST['senha'] != ""
@@ -15,5 +13,6 @@ if (isset($_POST['mp-nome']) && $_POST['mp-nome'] != ""
 
     $usuario = new Usuario();
     $usuario->insert($usuario);
+    echo "socorro";
 }
 ?>
