@@ -13,7 +13,7 @@ if (isset($_POST['mp-nome']) && $_POST['mp-nome'] != ""
     //$usuario->setSenha($_POST['senha']);
     Include_once('usuarioBanco.php');
     $usuarioBanco = new UsuarioBanco();
-    //$usuarioBanco->insert($usuario);
+    $usuarioBanco->insert($usuario);
     echo "sucesso";
 }
 ?>

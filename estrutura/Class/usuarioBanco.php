@@ -1,6 +1,6 @@
 <?php
 
-class UsuarioBanco extends Db implements Interface {
+class UsuarioBanco extends Db{
 
     private $table = 'usuario';
 
