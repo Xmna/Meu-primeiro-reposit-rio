@@ -1,5 +1,5 @@
 <?php
-include_once 'class/autoload.php';
+include_once ('autoload.php');
 
 if (isset($_POST['password']) && isset($_POST['email']) 
         && $_POST['password'] != "" && $_POST['email'] != "") {

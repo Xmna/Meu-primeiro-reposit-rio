@@ -88,12 +88,11 @@
 		<div id="cadastro">
 				<h3>Cadastre-se</h3><br/>
 				Insira seus dados abaixo para enviar sua Receita<br/><br/>
-				<form name='cadastro' action='cad' method='post'>
+				<form name='cadastro' action='Class/cadastro-user.php' method='post'>
 			
 				<input type='text' id='mp-nome' name='mp-nome' value='' placeholder='Seu nome' /><br/>
 				<input type='email' id='mp-email' name='mp-email' value='' placeholder='Seu e-mail' required /><br/>
 				<input type='password' id='mp-senha' name='senha' value='' placeholder='Crie uma senha' /><br/>
-				<input type='text' id='mp-usern' name='mp-usern' value='' placeholder='Crie um nome de usuário' /><br/>
 			
 				<input type='submit' name='submit' value='Cadastrar' />
 				</form>
@@ -101,7 +100,7 @@
 	</section>
 	<div id="id01" class="modal">
   
-			<form class="modal-content animate" action="/action_page.php" method="post">
+			<form class="modal-content animate" action="cadastro-user.php" method="post">
 			  <div class="imgcontainer">
 				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 				<img src="assets/img/image10.png" alt="Avatar" class="avatar">
