@@ -5,12 +5,13 @@ class UsuarioBanco extends Db{
     private $table = 'usuario';
 
     public function insert($usuario) {
+
         $stmt = $this->conexao->prepare("INSERT INTO {$this->table} (nome, senha, email) VALUES (:nome, :senha, :email)");
 
         $stmt->bindValue(':nome', $usuario->getNome());
         $stmt->bindValue(':senha', $usuario->getSenha());
         $stmt->bindValue(':email', $usuario->getEmail());
-
+        echo("INSERT INTO {$this->table} (nome, senha, email) VALUES (:nome, :senha, :email)");
         return $stmt->execute();
     }
     

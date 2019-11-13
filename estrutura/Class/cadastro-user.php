@@ -8,12 +8,11 @@ if (isset($_POST['mp-nome']) && $_POST['mp-nome'] != ""
 
     autoload('Usuario');
     $usuario = new Usuario($_POST['mp-nome'],$_POST['mp-email'],$_POST['senha']);
-    //$usuario->setNome($_POST['mp-nome']);
-    //$usuario->setEmail($_POST['mp-email']);
-    //$usuario->setSenha($_POST['senha']);
     Include_once('usuarioBanco.php');
     $usuarioBanco = new UsuarioBanco();
-    $usuarioBanco->insert($usuario);
-    echo "sucesso";
+    if($usuarioBanco->insert($usuario)){
+    header('Location:../index.html');}
+    else{
+        echo("Algo deu errado");    }
 }
 ?>

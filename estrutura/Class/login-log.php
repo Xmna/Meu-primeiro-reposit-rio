@@ -10,7 +10,7 @@ if (isset($_POST['password']) && isset($_POST['email'])
     $login = $login->verificaLogin($usuario);
     
         if($login){
-            header('Location:index.html');
+            header('Location:../index.html');
         } else {
             echo("Erro no login parça!");
             //header('Location:login.php');
