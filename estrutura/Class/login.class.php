@@ -20,11 +20,7 @@ class Login extends Db {
         $linha = $stmt->fetch();
         
         if($linha){
-            $usuario = new Usuario();
-            $usuario->setNome($linha['nome']);
-            $usuario->setSenha($linha['senha']);
-            $usuario->setEmail($linha['email']);
-            $usuario->setId($linha['id']);
+            $usuario = new Usuario($linha['email'],$linha['nome'],$linha['senha'],$linha['id']);
             
             $_SESSION['login'] = $usuario;
             
@@ -34,3 +30,4 @@ class Login extends Db {
         }
 
     }
+}
