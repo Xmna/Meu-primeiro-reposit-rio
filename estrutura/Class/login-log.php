@@ -10,9 +10,11 @@ if (isset($_POST['password']) && isset($_POST['email'])
     $login = new Login();
     $login = $login->verificaLogin($usuario);
     
-    if($login){
-        header('Location:login.php');
-    }
+        if($login){
+            header('Location:index.html');
+        } else {
+            header('Location:login.php');
+        }
     
 } else {
     $msg = "Preencha todos os campos";
