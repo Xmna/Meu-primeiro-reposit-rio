@@ -1,5 +1,4 @@
  <?php
-echo "socorro";
 function autoLoad($class) {
     include_once "Class/$class.class.php";
     
