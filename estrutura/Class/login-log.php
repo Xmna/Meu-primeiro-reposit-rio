@@ -20,4 +20,7 @@ if (isset($_POST['password']) && isset($_POST['email'])
     $msg = "Preencha todos os campos";
     echo $msg;
 }
+$valor = $_POST['password'];
+$valor = md5('$valor');
+
 ?>
