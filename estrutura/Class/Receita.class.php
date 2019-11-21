@@ -6,13 +6,15 @@ private $nomer;
 private $formap;
 private $ingredientes;
 private $tempo;
+private $pendente;
 
-function __construct($nomer,$formap,$ingredientes,$tempo,$idreceita = NULL){
+function __construct($nomer,$formap,$ingredientes,$tempo,$pendente,$idreceita = NULL){
     $this->idreceita = $idreceita;
     $this->nomer = $nomer;
     $this->formap = $formap;
     $this->ingredientes = $ingredientes;
     $this->tempo = $tempo;
+    $this->pendente = $pendente;
 }
 
 function getIdreceita(){
@@ -29,6 +31,9 @@ function getIngredientes(){
 }
 function getTempo(){
     return $this->getTempo;
+}
+function getPendente(){
+    return $this->getPendente;
 }
 function setIdreceita($idreceita) {
     $this->idreceita = $idreceita;
@@ -48,6 +53,10 @@ function setIngredientes($ingredientes) {
 }
 function setTempo($tempo) {
     $this->tempo = $tempo;
+
+}
+function setPendente($pendente) {
+    $this->pendente = $pendente;
 
 }
 
