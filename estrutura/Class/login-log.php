@@ -3,7 +3,7 @@ include_once ('autoload.php');
 
 if (isset($_POST['password']) && isset($_POST['email']) 
         && $_POST['password'] != "" && $_POST['email'] != "") {
-    $usuario = new Usuario('',$_POST['email'],$_POST['password']);
+    $usuario = new Usuario('',$_POST['email'],hash('md5',$_POST['password']));
     
 
     $login = new Login();
