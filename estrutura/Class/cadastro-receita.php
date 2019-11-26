@@ -16,6 +16,7 @@ if (isset($_POST['rname']) && $_POST['categ'] != ""
     Include_once('receitaBanco.php');
     $receitaBanco = new ReceitaBanco(); 
     if($receitaBanco->insert($receita)){
+    //echo "<script type='text/javascript'>alert('Receita enviada para avaliação!')</script>";
     header('Location:../index.html');}
     else{
         echo("Algo deu errado");    }}

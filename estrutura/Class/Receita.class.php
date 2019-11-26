@@ -10,7 +10,7 @@ private $tempo;
 private $porc;
 private $pendente;
 
-function __construct($nomer,$categ,$formap,$ingredientes,$tempo,$porc,$pendente=true,$idreceita = NULL){
+function __construct($nomer,$categ,$formap,$ingredientes,$tempo,$porc,$pendente=1,$idreceita = NULL){
     $this->idreceita = $idreceita;
     $this->nomer = $nomer;
     $this->categ = $categ;

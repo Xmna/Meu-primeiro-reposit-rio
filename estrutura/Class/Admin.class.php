@@ -1,6 +1,6 @@
 <?php
 
-class Usuario {
+class Admin {
 private $idadm;
 private $nome;
 private $email;

@@ -44,11 +44,14 @@ class ReceitaBanco extends Db{
         $usuarios = array();
 
         while ($linha = $stmt->fetch()) {
-            $usuario = new Usuario();
-            $usuario->setNome($linha['nome']);
-            $usuario->setSenha($linha['senha']);
-            $usuario->setEmail($linha['email']);
-            $usuario->setIdusuario($linha['idusuario']);
+            $usuario = new Receita($linha['nomer'],
+            $linha['idcategoria'],
+            $linha['formap'],
+            $linha['ingredientes'],
+            $linha['tempo'],
+            "nulo",
+            $linha['pendente'],
+            $linha['idreceita']);
 
             $usuarios[] = $usuario;
         }
