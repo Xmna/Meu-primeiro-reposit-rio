@@ -1,22 +1,23 @@
 <?php
 Include_once('autoload.php');
 //Verifica se veio tudo preenchido do formulário
-if (isset($_POST['mp-nome']) && $_POST['mp-nome'] != "" 
-        && isset($_POST['senha']) && $_POST['senha'] != ""
-        && isset($_POST['mp-email']) && $_POST['mp-email'] != ""
+echo $_POST['rname']."*".$_POST['categ']."*".$_POST['prep']
+."*".$_POST['porc']."*".$_POST['ingred']."*".$_POST['modo'];
+if (isset($_POST['rname']) && $_POST['categ'] != "" 
+        && isset($_POST['prep']) && $_POST['porc'] != ""
+        && isset($_POST['ingred']) && $_POST['modo'] != ""
         ){
     
     
     
-    autoload('Usuario');
-    $usuario = new Usuario($_POST['mp-nome'],$_POST['mp-email'],hash('md5',$_POST['senha']));
-    Include_once('usuarioBanco.php');
-    $usuarioBanco = new UsuarioBanco();
-    if($usuarioBanco->insert($usuario)){
+    autoload('Receita');
+    $receita = new Receita($_POST['rname'],$_POST['categ'],$_POST['modo'],$_POST['ingred'],$_POST['prep'],$_POST['porc']);
+    print_r($receita);
+    Include_once('receitaBanco.php');
+    $receitaBanco = new ReceitaBanco(); 
+    if($receitaBanco->insert($receita)){
     header('Location:../index.html');}
     else{
-        echo("Algo deu errado");    }
-}else{
-    echo("Captcha a mensagem");
-}
+        echo("Algo deu errado");    }}
+
 ?>

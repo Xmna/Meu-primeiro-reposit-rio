@@ -89,7 +89,7 @@
 		<div id="conteudo">
 			<h4>Enviar Receita</h4>
 			<table>
-				<form action='Class/cadastro-receita.php' method='POST'>
+				<form name='receita' action='Class/cadastro-receita.php' method='POST'>
 				<tbody>
 					<tr>
 						<td><label for="rname">
@@ -107,7 +107,7 @@
 						<td><label for="categ">
 								<h6>Selecione a Categoria</h6>
 							</label></td>
-						<td><select name="categ" form="categ">
+						<td><select name="categ">
 								<option value="sobremesa">Sobremesas</option>
 								<option value="sopa">Sopas</option>
 								<option value="creme">Cremes</option>
@@ -126,24 +126,24 @@
 						<td><label for="prep">
 								<h6>Tempo de Preparo</h6>
 							</label></td>
-						<td><input type="time" name="usr_time" required></td>
+						<td><input type="time" name="prep" required></td>
 					</tr>
 					<tr>
 						<td><label for="porc">
 								<h6>Porções</h6>
 							</label></td>
-						<td><input type="number" name="procoes" required></td>
+						<td><input type="number" name="porc" required></td>
 					</tr>
 					<tr>
 						<td><label for="ingred">
 								<h6>Ingredientes</h6>
 							</label></td>
-						<td><textarea rows="5" cols="60" placeholder="Ex. 8 ovos"></textarea></td>
+						<td><textarea rows="5" cols="60" placeholder="Ex. 8 ovos" name="ingred"></textarea></td>
 					</tr>
 					<td><label for="modo">
 							<h6>Modo de Preparo</h6>
 						</label></td>
-					<td><textarea rows="5" cols="60" placeholder="Ex. Bata os ovos até formar..."></textarea></td>
+					<td><textarea name="modo" rows="5" cols="60" placeholder="Ex. Bata os ovos até formar..."></textarea></td>
 					</tr>
 					<tr>
 						<td><input type='submit' name='submit' value='Enviar Receita' /></td>

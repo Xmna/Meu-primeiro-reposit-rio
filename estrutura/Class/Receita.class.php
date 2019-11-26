@@ -3,17 +3,21 @@
 class Receita {
 private $idreceita;
 private $nomer;
+private $categ;
 private $formap;
 private $ingredientes;
 private $tempo;
+private $porc;
 private $pendente;
 
-function __construct($nomer,$formap,$ingredientes,$tempo,$pendente,$idreceita = NULL){
+function __construct($nomer,$categ,$formap,$ingredientes,$tempo,$porc,$pendente=true,$idreceita = NULL){
     $this->idreceita = $idreceita;
     $this->nomer = $nomer;
+    $this->categ = $categ;
     $this->formap = $formap;
     $this->ingredientes = $ingredientes;
     $this->tempo = $tempo;
+    $this->porc = $porc;
     $this->pendente = $pendente;
 }
 
@@ -23,17 +27,23 @@ function getIdreceita(){
 function getNomer(){
     return $this->nomer;
 }
+function getCateg(){
+    return $this->categ;
+}
 function getFormap(){
     return $this->formap;
 }
 function getIngredientes(){
-    return $this->getIngredientes;
+    return $this->ingredientes;
 }
 function getTempo(){
-    return $this->getTempo;
+    return $this->tempo;
+}
+function getPorc(){
+    return $this->porc;
 }
 function getPendente(){
-    return $this->getPendente;
+    return $this->pendente;
 }
 function setIdreceita($idreceita) {
     $this->idreceita = $idreceita;
@@ -41,6 +51,10 @@ function setIdreceita($idreceita) {
 
 function setNomer($nomer) {
     $this->nomer = $nomer;
+}
+
+function setCateg($categ) {
+    $this->categ = $categ;
 }
 
 function setFormap($formap) {
@@ -55,6 +69,11 @@ function setTempo($tempo) {
     $this->tempo = $tempo;
 
 }
+
+function setPorc($porc) {
+    $this->porc = $porc;
+}
+
 function setPendente($pendente) {
     $this->pendente = $pendente;
 

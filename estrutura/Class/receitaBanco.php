@@ -4,14 +4,15 @@ class ReceitaBanco extends Db{
 
     private $table = 'receita';
 
-    public function insert($usuario) {
+    public function insert($receita) {
 
-        $stmt = $this->conexao->prepare("INSERT INTO {$this->table} (nome, senha, email) VALUES (:nome, :senha, :email)");
+        $stmt = $this->conexao->prepare("INSERT INTO {$this->table} (nomer, formap, ingredientes, tempo) VALUES (:nomer, :formap, :ingredientes, :tempo)");
 
-        $stmt->bindValue(':nome', $usuario->getNome());
-        $stmt->bindValue(':senha', $usuario->getSenha());
-        $stmt->bindValue(':email', $usuario->getEmail());
-        echo("INSERT INTO {$this->table} (nome, senha, email) VALUES (:nome, :senha, :email)");
+        $stmt->bindValue(':nomer', $receita->getNomer());
+        $stmt->bindValue(':formap', $receita->getFormap());
+        $stmt->bindValue(':ingredientes', $receita->getIngredientes());
+        $stmt->bindValue(':tempo', $receita->getTempo());
+        echo("INSERT INTO {$this->table} (nomer, formap, ingredientes, tempo) VALUES (:nomer, :formap, :ingredientes, :tempo)");
         return $stmt->execute();
     }
     
