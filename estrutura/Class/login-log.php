@@ -9,11 +9,15 @@ if (isset($_POST['password']) && isset($_POST['email'])
     $login = new Login();
     $login = $login->verificaLogin($usuario);
     
-        if($login){
+        if($login=='user'){
             header('Location:../index.html');
         } else {
+            if($login=='admin'){
+                header('Location:../pendentes.php');
+            }else{
             echo("Erro no login parça!");
             //header('Location:login.php');
+        }
         }
     
 } else {

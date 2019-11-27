@@ -3,7 +3,7 @@ include_once ('.\class\autoload.php');
 
     $receita = autoLoad('receitaBanco');
     $receita = new ReceitaBanco();
-    $rp = $receita->select_pendentes();
+    $rp = $receita->select();
 if($_POST){
     if($_POST['opcao']=="Rejeitar")
     if($receita->delete($_POST['selecionado'])){
@@ -59,7 +59,7 @@ if($_POST){
 		<section id="conteiner">
             <div id="tabela">
                 <form method="POST" name="pendentes">;
-                <h4>Receitas Pendentes</h4>
+                <h4>Receitas Cadastradas</h4>
                     <table border="1">
                             <tbody>
                             <tr>
@@ -74,8 +74,7 @@ if($_POST){
                             <td><?php echo $rec->getNomer()?></td>
                             <td><?php echo $rec->getFormap()?></a></td>
                             <td>
-                                <button onclick=aceitar(<?php echo $rec->getIdreceita()?>)>Aceitar</button>
-                                <button onclick=rejeitar(<?php echo $rec->getIdreceita()?>)>Rejeitar</button>
+                                
                             </td>
                             </tr>
                             <?php 

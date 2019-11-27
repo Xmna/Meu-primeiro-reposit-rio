@@ -36,14 +36,14 @@ class Login extends Db {
             
             $_SESSION['login'] = $usuario;
             
-            return $usuario;
+            return 'user';
         }else {
             if($linhaadm){
                 $adm = new Admin($linha['email'],$linha['nome'],$linha['senha'],$linha['idadm']);
                 
                 $_SESSION['login'] = $adm;
                 
-                return $adm;
+                return 'admin';
             }else{
             return false;}
         }

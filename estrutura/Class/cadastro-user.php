@@ -15,7 +15,7 @@ if (isset($_POST['mp-nome']) && $_POST['mp-nome'] != ""
     Include_once('usuarioBanco.php');
     $usuarioBanco = new UsuarioBanco();
     if($usuarioBanco->insert($usuario)){
-    header('Location:../index.html');}
+    header('Location:../cadastrofeito.html');}
     else{
         echo("Algo deu errado");    }}
 }else{

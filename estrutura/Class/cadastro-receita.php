@@ -17,7 +17,7 @@ if (isset($_POST['rname']) && $_POST['categ'] != ""
     $receitaBanco = new ReceitaBanco(); 
     if($receitaBanco->insert($receita)){
     //echo "<script type='text/javascript'>alert('Receita enviada para avaliação!')</script>";
-    header('Location:../index.html');}
+    header('Location:../receitacadastrada.html');}
     else{
         echo("Algo deu errado");    }}
 
